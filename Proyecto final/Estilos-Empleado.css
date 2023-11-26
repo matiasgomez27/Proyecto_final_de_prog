@@ -1,0 +1,44 @@
+* {
+
+    color: orange;
+    font-family: 'comic sans MS';
+}
+
+body {
+
+    background: linear-gradient(45deg, rgb(24, 24, 24), rgb(73, 73, 73));
+    display: grid;
+}
+
+table {
+
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+    background: transparent;
+}
+
+button {
+    color: black;
+    background: linear-gradient(45deg, gold, rgb(182, 134, 4));
+}
+
+button:hover {
+    transition: 1s;
+    background: rgb(51, 255, 0);
+    color: #fff;
+
+}
+
+th,
+td {
+
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+
+    background: transparent;
+}

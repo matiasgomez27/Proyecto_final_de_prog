@@ -1,0 +1,16 @@
+* {
+    color: orange;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'comic sans MS';
+}
+
+body {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg, rgb(24, 24, 24), rgb(73, 73, 73));
+}
