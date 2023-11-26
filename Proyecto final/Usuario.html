@@ -1,19 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Estilos-Usuario.css">
-    <script src="Script-Usuario.js"></script>
+
     <title>Usuario</title>
 </head>
 
 <body>
 
+    <div>
+        <h1 id="elements">Hola</h1>
+    </div>
 
+    <form id="Apruebeme">
+        <label id="nombre"></label>
+        <br>
+        <label id="apellido"></label>
+        <br>
+        <label id="dni"></label>
+        <br>
+        <label id="balance"></label>
+        <br>
+
+        <input type="number" id="monto">
+        <button type="button" id="ingresar" onclick="masplata()">Ingresar dinero</button>
+        <button type="button" id="retirar" onclick="menosplata()">Retirar dinero</button>
+        <button type="button" id="ok+" onclick="sumar()">OK</button>
+        <button type="button" id="ok-" onclick="restar()">OK</button>
+        <button type="button" onclick="cerrar()">Cerrar sesión</button>
+
+    </form>
 
 
 </body>
+
+<script src="Script-Usuario.js"></script>
 
 </html>

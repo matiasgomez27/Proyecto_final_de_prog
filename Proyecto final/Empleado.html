@@ -1,27 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="Script-Empleado.js"></script>
+
     <link rel="stylesheet" href="Estilos-Empleado.css">
     <title>Empleado</title>
 </head>
 
 <body>
+    <div>
+        <table id="registroTable">
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>DNI</th>
+                <th>Ingresos</th>
+                <th>Balance</th>
+                <th>Acciones</th>
+            </tr>
+        </table>
+    </div>
 
-    <table id="registroTable">
-        <tr>
-            <th>Nombre</th>
-            <th>Apellido</th>
-            <th>DNI</th>
-            <th>Ingresos</th>
-            <th>Gastos</th>
-            <th>Acciones</th>
-        </tr>
-    </table>
+
+
+
+    <div class="formulario">
+        <form id="form">
+            <br>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required>
+            <br>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" required>
+            <br>
+
+            <label for="dni">DNI:</label>
+            <input type="text" id="dni" required>
+            <br>
+
+            <label for="balance">Balance:</label>
+            <input type="number" id="balance" required>
+            <br>
+
+            <button type="button" onclick="actualizar()" id="BtnActualizar">Actualizar</button>
+            <br>
+        </form>
+    </div>
+
 
 </body>
+<script src="Script-Empleado.js"></script>
 
 </html>

@@ -1,25 +1,35 @@
 
+localStorage.setItem('UserLog', null);
+
 function Login(registros) {
 
     let Con = document.getElementById("pass").value;
     let Nom = document.getElementById("user").value;
-    let a = false;
     var registros = JSON.parse(localStorage.getItem('registros'));
-    let si = "";
+    var L = registros.length;
 
-    for (let i = 0; i < registros.length; i++) {
-        if (Con == registros[i].contraseña && Nom == registros[i].nombre) {
+    if (Con == "admin" && Nom == "admin") {
 
-            window.location = "Usuario.html";
-            si = Nom;
+        window.location = "Empleado.html";
 
-        } else if (i == registros.length - 1) {
-            alert("XD")
+    } else {
+        for (let i = 0; i < L; i++) {
+            if (Con == registros[i].contraseña && Nom == registros[i].nombre) {
+
+                localStorage.setItem('UserLog', i);
+                window.location = "Usuario.html";
+                break;
+            } else
+                if (i == L - 1) {
+
+                    alert("Usuario o contraseña incorrectas")
+
+                }
         }
+
     }
 
 }
-
 
 function NuevoC() {
     window.location = "NuevoCliente.html"

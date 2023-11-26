@@ -14,15 +14,15 @@ function agregarRegistro() {
     var apellido = document.getElementById('apellido').value;
     var dni = document.getElementById('dni').value;
     var contraseña = (document.getElementById('contraseña').value);
-    var gastos = parseFloat(document.getElementById('gastos').value);
+    var balance = 0;
 
-    if (nombre && apellido && dni && contraseña && !isNaN(gastos)) {
+    if (nombre && apellido && dni && contraseña) {
         var nuevoRegistro = {
             nombre: nombre,
             apellido: apellido,
             dni: dni,
             contraseña: contraseña,
-            gastos: gastos
+            balance: balance
         };
         registros.push(nuevoRegistro);
 
